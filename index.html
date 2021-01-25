@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>iCode - Heaven For Programers</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: cyan;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/iCode/"><h4>iCode</h5></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/iCode/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/iCode/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="" style="background-color: cyan;"></a></li>
+                            <li><a class="dropdown-item" href="" style="background-color: cyan;"></a></li>
+                            <li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/iCode/contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/iCode/Member.html">Become A Member</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-danger" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-secondry mx-1" style="background-color: cyan; color: black;"
+                        data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-secondry mx-1" style="background-color: cyan; color: black;"
+                        data-bs-toggle="modal" data-bs-target="#SighUpModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login To iCoder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SighUp Modal -->
+    <div class="modal fade" id="SighUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get An iCoder Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputtext" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleInputname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputdate" class="form-label">Birth Of Date</label>
+                            <input type="date" class="form-control" id="exampleInputdate">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome To iCode</h5>
+                    <p>Coding Blog</p>
+                    <button type="button" class="btn btn-danger">Different Languages</button>
+                    <button type="button" class="btn btn-primary">Coding Fun</button>
+                    <button type="button" class="btn btn-success">Web Devlopement</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Award Winning Website</h5>
+                    <p>Heaven For Programers</p>
+                    <button type="button" class="btn btn-danger">Python</button>
+                    <button type="button" class="btn btn-primary">Tech Fun</button>
+                    <button type="button" class="btn btn-success">Game Devlopement</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tips & Tricks</h5>
+                    <p>My Personal Tips And Tricks</p>
+                    <button type="button" class="btn btn-danger">Source Code</button>
+                    <button type="button" class="btn btn-primary">Coding Fun</button>
+                    <button type="button" class="btn btn-success">Gui Devlopement</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <div class="row mb-2 mx-1 my-4">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Languages</strong>
+                    <h3 class="mb-0">Featured Blog</h3>
+                    <div class="mb-1 text-muted">25/1/2021</div>
+                    <p class="card-text mb-auto">Top 50 Languages To Learn In 2021</p>
+                    <a href="#" class="stretched-link" style="text-decoration: none;">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="../img/thu-1.jfif" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">Coding Tech</strong>
+                    <h3 class="mb-0">Featured Blog</h3>
+                    <div class="mb-1 text-muted">25/1/2021</div>
+                    <p class="mb-auto">Coding Tech By Shreeansh Panda. Personal Tips&Triks</p>
+                    <a href="#" class="stretched-link " style="text-decoration: none;">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="../img/thu-2.jfif" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row mb-2 mx-1 my-4">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-warning">Web Devlopement</strong>
+                    <h3 class="mb-0">Featured Blog</h3>
+                    <div class="mb-1 text-muted">25/1/2021</div>
+                    <p class="card-text mb-auto">Web Devlopement By Shreeansh Panda</p>
+                    <a href="#" class="stretched-link" style="text-decoration: none;">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="../img/thu-3.jfif" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-danger">Game Devlopement</strong>
+                    <h3 class="mb-0">Featured Blog</h3>
+                    <div class="mb-1 text-muted">25/1/2021</div>
+                    <p class="mb-auto">Game Devlopement By Shreeansh Panda</p>
+                    <a href="#" class="stretched-link " style="text-decoration: none;">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="../img/thu-4.jfif" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2020-2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
